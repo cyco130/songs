@@ -38,6 +38,25 @@ const rawSongs: Omit<Song, "slug">[] = [
 		],
 	},
 	{
+		title: "Bazalika",
+		key: "A phrygian",
+		chords: [
+			{
+				name: "A",
+				lines: [["(NC)"]],
+			},
+			{
+				name: "B",
+				lines: [
+					["F", "C", "F", "C"],
+					["Gm", "Dm", "C", "Bb"],
+					["C", "Bb", "Am", "Am"],
+					["Am", "Am"],
+				],
+			},
+		],
+	},
+	{
 		title: "Çayeli",
 		key: "D hijaz",
 		chords: [

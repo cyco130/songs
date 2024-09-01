@@ -11,6 +11,11 @@ const SongPage: Page<{ slug: string }> = ({ params: { slug } }) => {
 				<Head title="Song not found - Songs" />
 				<ResponseHeaders status={404} />
 				<h1>Song not found</h1>
+				<p className="mt-8">
+					<Link className="underline" href="/">
+						Back to songs
+					</Link>
+				</p>
 			</main>
 		);
 	}
