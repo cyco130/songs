@@ -136,12 +136,12 @@ const rawSongs: Omit<Song, "slug">[] = [
 				name: "Verse",
 				lines: [
 					["Cm", "Cm", "Cm", "Fm"],
-					["Cm", "Cm", "Dm", "Cm"],
+					["Cm", "Cm", "Bbm", "Cm"],
 				],
 			},
 			{
 				name: "Chorus",
-				lines: [["Fm", "Eb", "Dm", "Cm"]],
+				lines: [["Fm", "Eb", "Bbm", "Cm"]],
 			},
 		],
 	},
