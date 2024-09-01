@@ -30,13 +30,13 @@ const SongPage: Page<{ slug: string }> = ({ params: { slug } }) => {
 				<small>({song.key})</small>
 			</h1>
 
-			<table className="m-0 w-full max-w-lg table-fixed text-lg">
+			<table className="m-0 w-full max-w-lg table-fixed">
 				<tbody>
 					{song.chords.map((section, i) => (
 						<Fragment key={i}>
 							<tr className="border-0">
 								<th
-									className={"text-left " + (i ? "pt-4" : "")}
+									className={"text-left " + (i ? "pt-2" : "")}
 									colSpan={maxLineLength}
 								>
 									{section.name}
@@ -45,7 +45,7 @@ const SongPage: Page<{ slug: string }> = ({ params: { slug } }) => {
 							{section.lines.map((line, i) => (
 								<tr key={i} className="border-0">
 									{line.map((chord, i) => (
-										<td className="border border-gray-300 p-2" key={i}>
+										<td className="border border-gray-300 p-2 text-sm" key={i}>
 											{chord}
 										</td>
 									))}
