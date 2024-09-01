@@ -6,5 +6,5 @@ import rakkas from "rakkasjs/vite-plugin";
 process.env.RAKKAS_DEFAULT_APP_TITLE = "Songs";
 
 export default defineConfig({
-	plugins: [tsconfigPaths(), react(), rakkas()],
+	plugins: [tsconfigPaths(), react(), rakkas({ prerender: true })],
 });
