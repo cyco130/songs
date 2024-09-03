@@ -231,11 +231,7 @@ const rawSongs: Omit<Song, "slug">[] = [
 			},
 			{
 				name: "Hasretliği çektirme...",
-				lines: [
-					["Fm", "Eb", "Db", "Bbm | C"],
-					["Fm", "Eb", "Db", "Bbm | C"],
-					["C"],
-				],
+				lines: [["Fm", "Eb", "Db", "C"], ["Fm", "Eb", "Db", "C"], ["C"]],
 			},
 		],
 	},
@@ -278,6 +274,33 @@ const rawSongs: Omit<Song, "slug">[] = [
 		],
 	},
 	{
+		title: "Telli Turna",
+		key: "G phrygian",
+		chords: [
+			{
+				name: "Intro",
+				lines: [
+					["Gm", "Gm", "Gm", "Gm"],
+					["Cm", "Cm", "Bb", "Fm"],
+				],
+			},
+			{
+				name: "Verse",
+				lines: [
+					["Gm", "Gm", "Gm", "Cm"],
+					["Fm", "Fm", "Bb | Fm", "Gm"],
+				],
+			},
+			{
+				name: "Chorus",
+				lines: [
+					["Gm", "Gm", "Cm", "Cm"],
+					["Bb", "Fm", "Gm", "Gm"],
+				],
+			},
+		],
+	},
+	{
 		title: "Üsküdar",
 		key: "Cm",
 		chords: [],
@@ -303,6 +326,33 @@ const rawSongs: Omit<Song, "slug">[] = [
 			{
 				name: "Chorus",
 				lines: [["Bbm", "C", "Bbm", "C"]],
+			},
+		],
+	},
+	{
+		title: "What You Gonna Do",
+		key: "G hijaz",
+		chords: [
+			{
+				name: "Intro / Verse",
+				lines: [
+					["G", "G", "G", "G"],
+					["G", "G", "Fm", "G"],
+				],
+			},
+			{
+				name: "Chorus",
+				lines: [
+					["Cm", "Ab", "G", "G"],
+					["Cm", "Ab", "G", "G"],
+				],
+			},
+			{
+				name: "Bridge",
+				lines: [
+					["Cm", "Ab", "Fm", "G"],
+					["Cm", "Ab", "Fm", "(NC)"],
+				],
 			},
 		],
 	},
