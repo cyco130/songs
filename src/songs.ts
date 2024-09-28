@@ -274,6 +274,19 @@ const rawSongs: Omit<Song, "slug">[] = [
 		],
 	},
 	{
+		title: "Telgrafın Telleri",
+		key: "D minor",
+		chords: [
+			{
+				name: "Verse / Chorus",
+				lines: [
+					["Am", "Dm", "C", "Am"],
+					["Am", "Dm", "C", "Dm"],
+				],
+			},
+		],
+	},
+	{
 		title: "Telli Turna",
 		key: "G phrygian",
 		chords: [
