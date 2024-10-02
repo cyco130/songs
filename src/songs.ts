@@ -85,12 +85,12 @@ const rawSongs: Omit<Song, "slug">[] = [
 		chords: [
 			{
 				name: "A",
-				lines: [["Cm", "Cm", "Gm"]],
+				lines: [["Cm", "Cm", "Fm"]],
 			},
 			{
 				name: "B (x2)",
 				lines: [
-					["Gm", "Gm", "Cm"],
+					["Fm", "Fm", "Cm"],
 					["Bbm", "Db", "Cm", "Cm"],
 				],
 			},
@@ -125,11 +125,11 @@ const rawSongs: Omit<Song, "slug">[] = [
 			},
 			{
 				name: "Verse",
-				lines: [["A", "Bb", "Gm", "A"]],
+				lines: [["A", "Bb", "Gm | Bb", "A"]],
 			},
 			{
 				name: "Chorus",
-				lines: [["Dm", "Bb", "Gm", "A"]],
+				lines: [["Dm", "Bb", "Gm | Bb", "A"]],
 			},
 		],
 	},
@@ -280,8 +280,8 @@ const rawSongs: Omit<Song, "slug">[] = [
 			{
 				name: "Verse / Chorus",
 				lines: [
-					["Am", "Dm", "C", "Am"],
-					["Am", "Dm", "C", "Dm"],
+					["Gm", "Dm", "C", "Gm"],
+					["Gm", "Dm", "C", "Dm"],
 				],
 			},
 		],
