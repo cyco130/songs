@@ -80,6 +80,23 @@ const rawSongs: Omit<Song, "slug">[] = [
 		],
 	},
 	{
+		title: "Entarisi Ala Benziyor",
+		key: "D hijaz",
+		chords: [
+			{
+				name: "Intro/Chorus",
+				lines: [["Gm", "D", "Cm", "D"]],
+			},
+			{
+				name: "Verse (2x each)",
+				lines: [
+					["Gm", "Gm", "D", "Cm"],
+					["D", "Cm", "Cm", "D"],
+				],
+			},
+		],
+	},
+	{
 		title: "Gesi Bağları",
 		key: "C phrygian",
 		chords: [
@@ -144,6 +161,26 @@ const rawSongs: Omit<Song, "slug">[] = [
 			{
 				name: "B",
 				lines: [["C", "Bbm", "Bbm", "C"]],
+			},
+		],
+	},
+	{
+		title: "Kasap Havası",
+		key: "D hijaz",
+		chords: [
+			{
+				name: "A",
+				lines: [
+					["D", "Gm", "D", "D"],
+					["Cm", "Cm", "D", "D"],
+				],
+			},
+			{
+				name: "B",
+				lines: [
+					["D", "D", "D", "D"],
+					["Cm", "Cm", "Bb", "D", "Gm", "D"],
+				],
 			},
 		],
 	},
