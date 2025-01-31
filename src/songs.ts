@@ -67,6 +67,23 @@ const rawSongs: Omit<Song, "slug">[] = [
 		],
 	},
 	{
+		title: "Çemberimde Gül Oya",
+		key: "G - phrygian on B",
+		chords: [
+			{
+				name: "Verse (x2)",
+				lines: [["G", "G", "Em", "D", "G", "G"]],
+			},
+			{
+				name: "Chorus (x2)",
+				lines: [
+					["G", "Em", "D", "D"],
+					["C", "D", "G", "G"],
+				],
+			},
+		],
+	},
+	{
 		title: "Dere Geliyor",
 		key: "Dm",
 		chords: [
@@ -236,6 +253,20 @@ const rawSongs: Omit<Song, "slug">[] = [
 					["Cm", "Cm", "Cm", "Cm"],
 					["Cm", "Cm", "D", "D"],
 				],
+			},
+		],
+	},
+	{
+		title: "Sevemem",
+		key: "A hijaz",
+		chords: [
+			{
+				name: "A (Melody/Chorus/Intro) (x2)",
+				lines: [["A", "A", "Gm", "A"]],
+			},
+			{
+				name: "B (End of Verses) (x2)",
+				lines: [["Dm", "A", "Bb", "A"]],
 			},
 		],
 	},
