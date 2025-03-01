@@ -57,6 +57,20 @@ const rawSongs: Omit<Song, "slug">[] = [
 		],
 	},
 	{
+		title: "Crosswinds",
+		key: "Dm",
+		chords: [
+			{
+				name: "A",
+				lines: [
+					["Dm", "C", "Bb", "C"],
+					["Dm", "C", "Bb", "Am"],
+					["Gm", "Gm", "Bb", "Bb"],
+				],
+			},
+		],
+	},
+	{
 		title: "Çayeli",
 		key: "D hijaz",
 		chords: [
@@ -107,8 +121,8 @@ const rawSongs: Omit<Song, "slug">[] = [
 			{
 				name: "Verse (2x each)",
 				lines: [
-					["Gm", "Gm", "D", "Cm"],
-					["D", "Cm", "Cm", "D"],
+					["Gm", "Gm", "Cm", "D"],
+					["Gm", "Cm", "Eb", "D"],
 				],
 			},
 		],
@@ -201,6 +215,10 @@ const rawSongs: Omit<Song, "slug">[] = [
 			},
 		],
 	},
+	// {
+	// 	title: "Kojak Cocek",
+	// 	key: "",
+	// },
 	{
 		title: "Las Palmas",
 		key: "C phrygian",
@@ -215,6 +233,34 @@ const rawSongs: Omit<Song, "slug">[] = [
 			{
 				name: "Chorus",
 				lines: [["Fm", "Eb", "Bbm", "Cm"]],
+			},
+		],
+	},
+	{
+		// Bughicis freylakhs
+		title: "Merlin",
+		key: "D hijaz",
+		chords: [
+			{
+				name: "A (x2)",
+				lines: [["D", "D", "Cm", "D"]],
+			},
+			{
+				name: "B (x2)",
+				lines: [["D", "D", "Cm", "D"]],
+			},
+			{
+				name: "C (x2)",
+				lines: [["G", "G", "D", "G"]],
+			},
+			{
+				name: "D",
+				lines: [
+					["D", "Cm", "D", "Gm"],
+					["D", "Cm", "D", "D"],
+					["D", "Cm", "D", "Gm"],
+					["D", "D", "D", "D"],
+				],
 			},
 		],
 	},
@@ -300,6 +346,32 @@ const rawSongs: Omit<Song, "slug">[] = [
 			{
 				name: "Hasretliği çektirme...",
 				lines: [["Fm", "Eb", "Db", "C"], ["Fm", "Eb", "Db", "C"], ["C"]],
+			},
+		],
+	},
+	{
+		title: "Sugar in the Blood",
+		key: "B hijaz",
+		chords: [
+			{
+				name: "Riff/Verse",
+				lines: [["B", "B", "Am", "B"]],
+			},
+			{
+				name: "Chorus",
+				lines: [["Am", "Em", "Am", "B"]],
+			},
+			{
+				name: "Post-chorus",
+				lines: [["B", "B", "Cb", "Cb"], ["Am"]],
+			},
+			{
+				name: "Interlude",
+				lines: [
+					["Em", "Em", "G", "G"],
+					["Am", "Am", "C", "C"],
+					["Em", "D", "C", "B"],
+				],
 			},
 		],
 	},
