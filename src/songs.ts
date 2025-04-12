@@ -1,5 +1,7 @@
 export interface Song {
 	title: string;
+	originalTitle?: string;
+	link?: string;
 	slug: string;
 	key: string;
 	chords: Section[];
@@ -57,16 +59,53 @@ const rawSongs: Omit<Song, "slug">[] = [
 		],
 	},
 	{
+		title: "Chichovoto Horo",
+		key: "D",
+		originalTitle: "Chichovoto Horo",
+		link: "https://www.youtube.com/watch?v=KqgnvL80Zyg",
+		chords: [
+			{
+				name: "A (x2)",
+				lines: [
+					["D", "D", "D", "D"],
+					["D", "D", "D", "D"],
+					["D", "A", "D", "A"],
+					["D", "A", "D", "A"],
+				],
+			},
+			{
+				name: "B (x2)",
+				lines: [["D", "D", "D", "D"]],
+			},
+			{
+				name: "C (x2)",
+				lines: [
+					["G", "G", "G!", "G"],
+					["G", "G", "G!", "G"],
+					["C", "D", "C", "D"],
+					["C", "D", "C", "D"],
+				],
+			},
+			{
+				name: "D (x2)",
+				lines: [["G", "G", "G", "G"]],
+			},
+		],
+	},
+	{
 		title: "Crosswinds",
 		key: "Dm",
 		chords: [
 			{
-				name: "A",
+				name: "A (x2)",
 				lines: [
 					["Dm", "C", "Bb", "C"],
 					["Dm", "C", "Bb", "Am"],
-					["Gm", "Gm", "Bb", "Bb"],
 				],
+			},
+			{
+				name: "B (x4)",
+				lines: [["Gm", "Gm", "Bb", "Bb"]],
 			},
 		],
 	},
@@ -93,6 +132,23 @@ const rawSongs: Omit<Song, "slug">[] = [
 				lines: [
 					["G", "Em", "D", "D"],
 					["C", "D", "G", "G"],
+				],
+			},
+		],
+	},
+	{
+		title: "Darbuchia",
+		key: "Dm",
+		chords: [
+			{
+				name: "A (x8)",
+				lines: [["Dm", "Dm", "C", "Dm"]],
+			},
+			{
+				name: "B (x4)",
+				lines: [
+					["Dm", "Gm", "C", "F"],
+					["Bb", "Gm", "Am", "Dm"],
 				],
 			},
 		],
@@ -279,6 +335,40 @@ const rawSongs: Omit<Song, "slug">[] = [
 		],
 	},
 	{
+		title: "One Night in Paradise",
+		originalTitle: "A Nakht In Gan Eydn",
+		link: "https://www.youtube.com/watch?v=FCBbgAKK1XY",
+		key: "G minor",
+		chords: [
+			{
+				name: "A (x2)",
+				lines: [
+					["Gm", "Gm", "Gm", "Gm"],
+					["Bb", "Bb", "Bb", "Bb"],
+					["Bb", "Bb", "Cm", "Gm"],
+					["Gm", "D7", "Gm | D7", "Gm"],
+				],
+			},
+			{
+				name: "B (x2)",
+				lines: [
+					["Gm", "Gm | G", "G", "Cm"],
+					["Cm", "Cm", "D7", "D7"],
+					["Bb", "Bb", "Cm", "Cm"],
+					["Gm", "D7", "Gm", "Gm"],
+				],
+			},
+			{
+				name: "C (x2) rhythm!",
+				lines: [
+					["Gm", "Gm", "Gm", "G"],
+					["Bb", "Bb", "Cm", "Cm"],
+					["Gm", "D7", "Gm", "Gm"],
+				],
+			},
+		],
+	},
+	{
 		title: "Rampi Rampi",
 		key: "D hijaz",
 		chords: [
@@ -450,6 +540,21 @@ const rawSongs: Omit<Song, "slug">[] = [
 					["Gm", "Gm", "Cm", "Cm"],
 					["Bb", "Fm", "Gm", "Gm"],
 				],
+			},
+		],
+	},
+	{
+		title: "Thermastis",
+		key: "Fm",
+		link: "https://www.youtube.com/watch?v=JVCJXss_XiY",
+		chords: [
+			{
+				name: "A (x16)",
+				lines: [["Fm", "Fm", "Fm", "Fm"]],
+			},
+			{
+				name: "A (x16)",
+				lines: [["Fm", "G", "C", "Fm"]],
 			},
 		],
 	},
