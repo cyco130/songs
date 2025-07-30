@@ -261,7 +261,7 @@ const rawSongs: Omit<Song, "slug">[] = [
 				name: "Intro A",
 				lines: [
 					["G", "G", "G", "G"],
-					["G", "G", "C", "G"],
+					["G", "G", "D", "G"],
 				],
 			},
 			{
