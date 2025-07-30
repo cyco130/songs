@@ -16,13 +16,14 @@ export type Line = string[];
 
 const rawSongs: Omit<Song, "slug">[] = [
 	{
-		title: "Ah Ya Zaing",
+		title: "Ah Ya Zain",
 		key: "C hijaz",
 		chords: [
 			{
 				name: "All",
 				lines: [
 					["C", "C", "C", "C7"],
+					["Fm", "Fm", "Bbm", "C"],
 					["Fm", "Fm", "Bbm", "C"],
 				],
 			},
