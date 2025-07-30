@@ -16,6 +16,19 @@ export type Line = string[];
 
 const rawSongs: Omit<Song, "slug">[] = [
 	{
+		title: "Ah Ya Zaing",
+		key: "C hijaz",
+		chords: [
+			{
+				name: "All",
+				lines: [
+					["C", "C", "C", "C7"],
+					["Fm", "Fm", "Bbm", "C"],
+				],
+			},
+		],
+	},
+	{
 		title: "Ayrılık",
 		key: "C minor",
 		chords: [
@@ -137,7 +150,8 @@ const rawSongs: Omit<Song, "slug">[] = [
 		],
 	},
 	{
-		title: "Darbuchia",
+		title: "Darbashiya",
+		link: "https://www.youtube.com/watch?v=RGFFSekIq0I",
 		key: "Dm",
 		chords: [
 			{
