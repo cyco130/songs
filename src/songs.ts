@@ -253,6 +253,41 @@ const rawSongs: Omit<Song, "slug">[] = [
 		],
 	},
 	{
+		title: "Hop Hop",
+		originalTitle: "Beyoğlu'nda Gezersin",
+		key: "G",
+		chords: [
+			{
+				name: "Intro A",
+				lines: [
+					["G", "G", "G", "G"],
+					["G", "G", "C", "G"],
+				],
+			},
+			{
+				name: "Intro B - (like Chorus)",
+				lines: [
+					["C", "C", "G", "G"],
+					["D", "D", "G", "G"],
+				],
+			},
+			{
+				name: "Verse",
+				lines: [
+					["G", "G", "G", "G"],
+					["C", "C", "D", "D"],
+				],
+			},
+			{
+				name: "Chorus",
+				lines: [
+					["C", "C", "G", "G"],
+					["D", "D", "G", "G"],
+				],
+			},
+		],
+	},
+	{
 		title: "Et Dodim",
 		key: "C hijaz",
 		chords: [
