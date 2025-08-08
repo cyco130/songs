@@ -313,7 +313,7 @@ function SongItem({ song }: { song: Song }) {
 			<Link
 				prefetch="eager"
 				preload="eager"
-				href={`/songs/${song.slug}`}
+				href={`/songs/${song.slug}?back=folkus`}
 				className={checked ? "line-through" : "no-underline"}
 			>
 				{song.title} ({song.key})

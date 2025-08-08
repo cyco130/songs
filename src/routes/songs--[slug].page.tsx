@@ -2,8 +2,10 @@ import { Head, Link, ResponseHeaders, type Page } from "rakkasjs";
 import { Fragment } from "react/jsx-runtime";
 import { songs } from "src/songs";
 
-const SongPage: Page<{ slug: string }> = ({ params: { slug } }) => {
+const SongPage: Page<{ slug: string }> = ({ params: { slug }, url }) => {
 	const song = songs.find((song) => song.slug === slug);
+
+	const folkus = url.searchParams.get("back") === "folkus";
 
 	if (!song) {
 		return (
@@ -68,8 +70,8 @@ const SongPage: Page<{ slug: string }> = ({ params: { slug } }) => {
 			</table>
 
 			<p className="mt-8">
-				<Link className="underline" href="/">
-					Back to songs
+				<Link className="underline" href={folkus ? "/folkus" : "/"}>
+					Back to {folkus ? "Folkus setlist" : "songs"}
 				</Link>
 			</p>
 		</main>
