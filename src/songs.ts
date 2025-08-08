@@ -17,14 +17,14 @@ export type Line = string[];
 const rawSongs: Omit<Song, "slug">[] = [
 	{
 		title: "Ah Ya Zain",
-		key: "C hijaz",
+		key: "D hijaz",
 		chords: [
 			{
 				name: "All",
 				lines: [
-					["C", "C", "C", "C7"],
-					["Fm", "Fm", "Bbm", "C"],
-					["Fm", "Fm", "Bbm", "C"],
+					["D", "D", "D", "D7"],
+					["Gm", "Gm", "Cm", "D"],
+					["Gm", "Gm", "Cm", "D"],
 				],
 			},
 		],
@@ -135,17 +135,17 @@ const rawSongs: Omit<Song, "slug">[] = [
 	},
 	{
 		title: "Çemberimde Gül Oya",
-		key: "G - phrygian on B",
+		key: "A - phrygian on C#",
 		chords: [
 			{
 				name: "Verse (x2)",
-				lines: [["G", "G", "Em", "D", "G", "G"]],
+				lines: [["A", "A", "F#m", "E", "A", "A"]],
 			},
 			{
 				name: "Chorus (x2)",
 				lines: [
-					["G", "Em", "D", "D"],
-					["C", "D", "G", "G"],
+					["A", "F#m", "E", "E"],
+					["D", "E", "A", "A"],
 				],
 			},
 		],
@@ -371,6 +371,30 @@ const rawSongs: Omit<Song, "slug">[] = [
 		],
 	},
 	{
+		title: "Misirlou",
+		key: "C hijaz",
+		chords: [
+			{
+				name: "Verse",
+				lines: [
+					["C", "C", "C", "C"],
+					["C", "C", "C", "C"],
+					["Fm", "Fm", "C", "C"],
+					["Bbm", "Bbm", "C", "C"],
+				],
+			},
+			{
+				name: "Chorus",
+				lines: [
+					["Fm", "Fm", "Eb", "Eb"],
+					["Db", "Db7", "C", "C"],
+					["Bbm", "Bbm", "C", "C"],
+					["Bbm", "Bbm", "C", "C"],
+				],
+			},
+		],
+	},
+	{
 		title: "Nar Çiçeği",
 		key: "C hijaz",
 		chords: [
@@ -555,13 +579,17 @@ const rawSongs: Omit<Song, "slug">[] = [
 	},
 	{
 		title: "Telgrafın Telleri",
-		key: "D minor",
+		key: "E minor",
 		chords: [
+			{
+				name: "Intro",
+				lines: [["Em", "Em", "Em", "Em!"]],
+			},
 			{
 				name: "Verse / Chorus",
 				lines: [
-					["Gm", "Dm", "C", "Gm"],
-					["Gm", "Dm", "C", "Dm"],
+					["Am", "Em", "D", "Am"],
+					["Am", "Em", "D", "Em"],
 				],
 			},
 		],
