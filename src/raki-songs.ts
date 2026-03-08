@@ -2,17 +2,16 @@ import type { Song } from "src/songs";
 
 const rawSongs: Omit<Song, "slug">[] = [
 	{
-		// TODO: Transpose to C minot
 		title: "Anlıyorsun Değil mi?",
-		key: "D minor",
+		key: "C minor",
 		chords: [
 			{
 				name: "Verse (x2)",
 				lines: [
-					["Dm", "Dm", "Dm", "Dm"],
-					["C", "C", "Dm", "Dm"],
-					["Bb", "Bb", "A", "A"],
-					["Bb", "A", "Dm", "-"],
+					["Cm", "Cm", "Cm", "Cm"],
+					["Bb", "Bb", "Cm", "Cm"],
+					["Bb", "Bb", "G", "G"],
+					["Bb", "G", "Cm", "-"],
 				],
 			},
 			{
@@ -21,14 +20,14 @@ const rawSongs: Omit<Song, "slug">[] = [
 					["Bb", "Bb", "A", "A"],
 					["Bb", "Bb", "A", "A"],
 					["Bb", "Bb", "A", "A"],
-					["Bb", "A", "Dm", "-"],
+					["Bb", "A", "Cm", "-"],
 				],
 			},
 			{
 				name: "Chorus (x4)",
 				lines: [
-					["-", "A", "Gm", "A"],
-					["-", "A", "A", "A"],
+					["-", "G", "Fm", "G"],
+					["-", "G", "G", "G"],
 				],
 			},
 		],
@@ -297,7 +296,6 @@ const rawSongs: Omit<Song, "slug">[] = [
 		],
 	},
 	{
-		// TODO: Prechorus ve dönüş
 		title: "Zalim",
 		key: "B minor",
 		chords: [
