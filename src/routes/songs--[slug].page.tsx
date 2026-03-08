@@ -1,11 +1,13 @@
 import { Head, Link, ResponseHeaders, type Page } from "rakkasjs";
 import { Fragment } from "react/jsx-runtime";
-import { songs } from "src/songs";
+import { songs as mainSongs } from "src/songs";
+import { songs as rakiSongs } from "src/raki-songs";
 
 const SongPage: Page<{ slug: string }> = ({ params: { slug }, url }) => {
-	const song = songs.find((song) => song.slug === slug);
+	const set = url.searchParams.get("set") ?? "";
+	const songs = set === "raki" ? rakiSongs : mainSongs;
 
-	const folkus = url.searchParams.get("back") === "folkus";
+	const song = songs.find((song) => song.slug === slug);
 
 	if (!song) {
 		return (
@@ -70,8 +72,9 @@ const SongPage: Page<{ slug: string }> = ({ params: { slug }, url }) => {
 			</table>
 
 			<p className="mt-8">
-				<Link className="underline" href={folkus ? "/folkus" : "/"}>
-					Back to {folkus ? "Folkus setlist" : "songs"}
+				<Link className="underline" href={"/" + set}>
+					Back to{" "}
+					{set ? `${set[0]!.toUpperCase() + set.slice(1)} setlist` : "songs"}
 				</Link>
 			</p>
 		</main>

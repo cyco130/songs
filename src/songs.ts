@@ -3,7 +3,7 @@ export interface Song {
 	originalTitle?: string;
 	link?: string;
 	slug: string;
-	key: string;
+	key: Note | `${Note} ${Mode}`;
 	chords: Section[];
 }
 
@@ -12,7 +12,15 @@ export interface Section {
 	lines: Line[];
 }
 
-export type Line = string[];
+export type Line = ChordGroup[];
+
+export type BaseNote = "A" | "B" | "C" | "D" | "E" | "F" | "G";
+export type Accidental = "" | "b" | "#";
+export type Note = `${BaseNote}${Accidental}`;
+export type Mode = "major" | "minor" | "phrygian" | "hijaz";
+export type ChordSuffix = "" | "7" | "m" | "m7" | "mb5" | "m9" | "sus";
+export type Chord = `${Note}${ChordSuffix}${"!" | ""}`;
+export type ChordGroup = Chord | `${Chord} | ${Chord}` | "__" | "-";
 
 const rawSongs: Omit<Song, "slug">[] = [
 	{
@@ -59,7 +67,7 @@ const rawSongs: Omit<Song, "slug">[] = [
 		chords: [
 			{
 				name: "A",
-				lines: [["(NC)"]],
+				lines: [["-"]],
 			},
 			{
 				name: "B",
@@ -108,7 +116,7 @@ const rawSongs: Omit<Song, "slug">[] = [
 	},
 	{
 		title: "Crosswinds",
-		key: "Dm",
+		key: "D minor",
 		chords: [
 			{
 				name: "A (x2)",
@@ -135,7 +143,7 @@ const rawSongs: Omit<Song, "slug">[] = [
 	},
 	{
 		title: "Çemberimde Gül Oya",
-		key: "A - phrygian on C#",
+		key: "A",
 		chords: [
 			{
 				name: "Verse (x2)",
@@ -153,7 +161,7 @@ const rawSongs: Omit<Song, "slug">[] = [
 	{
 		title: "Darbashiya",
 		link: "https://www.youtube.com/watch?v=RGFFSekIq0I",
-		key: "Dm",
+		key: "D minor",
 		chords: [
 			{
 				name: "A (x8)",
@@ -170,7 +178,7 @@ const rawSongs: Omit<Song, "slug">[] = [
 	},
 	{
 		title: "Dere Geliyor",
-		key: "Dm",
+		key: "D minor",
 		chords: [
 			{
 				name: "Verse",
@@ -623,7 +631,7 @@ const rawSongs: Omit<Song, "slug">[] = [
 	},
 	{
 		title: "Thermastis",
-		key: "Fm",
+		key: "F minor",
 		link: "https://www.youtube.com/watch?v=JVCJXss_XiY",
 		chords: [
 			{
@@ -638,7 +646,7 @@ const rawSongs: Omit<Song, "slug">[] = [
 	},
 	{
 		title: "Üsküdar",
-		key: "Cm",
+		key: "C minor",
 		chords: [],
 	},
 	{
@@ -687,7 +695,7 @@ const rawSongs: Omit<Song, "slug">[] = [
 				name: "Bridge",
 				lines: [
 					["Cm", "Ab", "Fm", "G"],
-					["Cm", "Ab", "Fm", "(NC)"],
+					["Cm", "Ab", "Fm", "-"],
 				],
 			},
 		],

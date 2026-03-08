@@ -101,7 +101,7 @@ const rawSongs: Omit<Song, "slug">[] = [
 		chords: [
 			{
 				name: "A",
-				lines: [["(NC)"]],
+				lines: [["-"]],
 			},
 			{
 				name: "B",
@@ -313,7 +313,7 @@ function SongItem({ song }: { song: Song }) {
 			<Link
 				prefetch="eager"
 				preload="eager"
-				href={`/songs/${song.slug}?back=folkus`}
+				href={`/songs/${song.slug}?set=folkus`}
 				className={checked ? "line-through" : "no-underline"}
 			>
 				{song.title} ({song.key})
